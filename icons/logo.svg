@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
+   version="1.1"
+   id="svg7001"
+   inkscape:version="1.2-dev (bf4f53e, 2021-05-21)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="E:\Vorlesungen\ubicast-downloader\icons\icon-128.png"
+   inkscape:export-xdpi="12.29"
+   inkscape:export-ydpi="12.29"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7003"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="1000mm"
+     units="px"
+     inkscape:zoom="0.5499273"
+     inkscape:cx="1185.6113"
+     inkscape:cy="530.97928"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6998" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 136.94339,261.459 c 2.62251,-0.5369 5.07983,-1.59003 7.84687,-3.38654 1.09444,-0.72274 6.93829,-6.4427 24.26338,-23.76777 49.18752,-49.20818 89.16529,-89.3718 89.97062,-90.36298 2.31277,-2.8703 3.92344,-6.05035 4.83202,-9.5195 0.39235,-1.48678 0.47494,-2.39536 0.4956,-4.83203 0,-3.90278 -0.5782,-6.33944 -2.29211,-9.70534 -2.35407,-4.62553 -6.2362,-7.35128 -12.05942,-8.54896 -3.20069,-0.64014 -6.5253,-0.74339 -26.49353,-0.74339 h -19.98887 l -0.4956,-0.53689 c -0.28909,-0.30975 -0.61949,-0.88794 -0.74339,-1.30093 -0.39234,-1.32158 -0.51623,-4.77008 -0.2891,-8.38377 0.1239,-2.188868 0.2065,-16.581689 0.2065,-38.408392 0,-32.874278 -0.0207,-35.021845 -0.37169,-37.066162 -2.20951,-12.720198 -10.94433,-19.1835484 -27.60861,-20.4431757 -3.67564,-0.2684451 -74.669216,-0.2890961 -79.191498,0 -8.363118,0.5162392 -13.566836,1.6519723 -18.151059,3.9440842 -2.10627,1.0737861 -3.138756,1.7758725 -4.790728,3.3452465 -2.767055,2.581214 -4.604874,5.967756 -5.43086,9.953143 -0.103245,0.578193 -0.268445,1.32158 -0.351049,1.651978 -0.0826,0.351043 -0.206492,19.617184 -0.268445,42.848065 -0.123894,41.691693 -0.123894,42.228583 -0.53689,43.033923 -0.908585,1.79652 -1.879122,2.00302 -7.950124,1.63133 -18.171715,-1.09443 -29.838778,-1.36289 -35.125093,-0.78469 -8.156626,0.86729 -13.5668358,2.97355 -17.387026,6.79374 -2.8703039,2.89095 -4.52228226,7.08284 -4.83202345,12.24525 -0.30974705,5.63737 1.54872355,10.67588 6.02970395,16.27195 1.5074274,1.87911 4.5842285,5.03852 8.5902605,8.77611 1.734577,1.63132 23.705826,23.45802 48.81583,48.50607 25.089354,25.02742 46.606311,46.39983 47.803991,47.47361 6.83504,6.1949 12.36915,9.62275 17.69677,10.98563 2.1269,0.55754 5.88515,0.70207 7.80557,0.33039 z"
+       id="path7007"
+       style="fill:#274bb1;stroke:none;stroke-width:0.0206497;fill-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-weight:800;font-size:124.969px;line-height:1.25;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, Ultra-Bold';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;stroke-width:5.20706"
+       x="84.768829"
+       y="172.81055"
+       id="text9331"><tspan
+         sodipodi:role="line"
+         id="tspan9329"
+         style="fill:#f7ffff;fill-opacity:1;stroke-width:5.20706"
+         x="84.768829"
+         y="172.81055">U</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+:root {
+    --background: #fff;
+    --text-color: #000000;
+    --link-color: #337fd2;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --background:#161618;
+        --text-color: #f2f5f4;
+        --link-color: #75c0c7;
+    }
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background:var(--background);
+    color:var(--text-color);
+    font-size: large;
+}
+
+a {
+    color:var(--link-color);
+}
+
+.content {
+    margin: 2%;
+}
+
+h3, .center {
+    text-align: center;
+}
+
+.text-secondary {
+    color:#888888;
+}
+
+.mono {
+    font-family: monospace, monospace;
+}
+
+.video-container {
+    border-style: solid;
+    border-color: #264BB1;
+    border-radius: 5px;
+    padding: 2%;
+}
