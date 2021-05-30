@@ -14,19 +14,19 @@ myPort.onMessage.addListener(function(videos) {
 
             htmlString += '<div class="video-container">';
             htmlString += '<b>' + videos[oid].title + '</b><br>';
-            htmlString += '<span class="text-secondary"><span class="material-icons">schedule</span> <span class="mono">' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2) + '</span> ';
+            htmlString += '<span class="text-secondary" title="Duration"><span class="material-icons">schedule</span> <span class="mono">' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2) + '</span></span> ';
 
             if (videos[oid].speaker) {
-                htmlString += '<span class="text-secondary"><span class="material-icons">record_voice_over</span> ' + videos[oid].speaker + '</span> ';
+                htmlString += '<span class="text-secondary" title="Speaker"><span class="material-icons">record_voice_over</span> ' + videos[oid].speaker + '</span> ';
             }
 
             var date = new Date(videos[oid].date);
-            htmlString += '<span class="text-secondary"><span class="material-icons">today</span> ' + date.toLocaleDateString() + '</span><br>';
+            htmlString += '<span class="text-secondary" title="Add date"><span class="material-icons">today</span> ' + date.toLocaleDateString() + '</span><br>';
 
-            htmlString += '<span class="material-icons">public</span> ' + videos[oid].website + '</span><br>';
+            htmlString += '<span class="text-secondary" title="UbiCast server"><span class="material-icons">public</span> ' + videos[oid].website + '</span><br>';
 
             if (videos[oid].license) {
-                htmlString += '<span class="text-secondary"><span class="material-icons">info</span> ' + (videos[oid].license_url ? '<a href="' + videos[oid].license_url + '">' + videos[oid].license + '</a>' : videos[oid].license) + '</span>';
+                htmlString += '<span class="text-secondary" title="License"><span class="material-icons">info</span> ' + (videos[oid].license_url ? '<a href="' + videos[oid].license_url + '">' + videos[oid].license + '</a>' : videos[oid].license) + '</span>';
             }
 
             if (videos[oid].speaker || videos[oid].license) {
