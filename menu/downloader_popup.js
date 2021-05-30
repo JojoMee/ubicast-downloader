@@ -21,7 +21,7 @@ myPort.onMessage.addListener(function(videos) {
             }
 
             var date = new Date(videos[oid].date);
-            htmlString += '<span title="Add date"><span class="material-icons">today</span> ' + date.toLocaleDateString() + '</span><br>';
+            htmlString += '<span title="Add date"><span class="material-icons">today</span> ' + new Intl.DateTimeFormat(navigator.language, {year: 'numeric', month: '2-digit', day: '2-digit'}).format(date) + '</span><br>';
 
             htmlString += '<span class="text-secondary" title="UbiCast server"><span class="material-icons">public</span> ' + videos[oid].website + '</span><br>';
 
