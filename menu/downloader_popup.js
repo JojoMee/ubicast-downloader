@@ -14,14 +14,14 @@ myPort.onMessage.addListener(function(videos) {
 
             htmlString += '<div class="video-container">';
             htmlString += '<b>' + videos[oid].title + '</b><br>';
-            htmlString += '<span class="text-secondary" title="Duration"><span class="material-icons">schedule</span> <span class="mono">' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2) + '</span></span> ';
+            htmlString += '<span title="Duration"><span class="material-icons">schedule</span> <span class="mono">' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2) + '</span></span> ';
 
             if (videos[oid].speaker) {
-                htmlString += '<span class="text-secondary" title="Speaker"><span class="material-icons">record_voice_over</span> ' + videos[oid].speaker + '</span> ';
+                htmlString += '<span title="Speaker"><span class="material-icons">record_voice_over</span> ' + videos[oid].speaker + '</span> ';
             }
 
             var date = new Date(videos[oid].date);
-            htmlString += '<span class="text-secondary" title="Add date"><span class="material-icons">today</span> ' + date.toLocaleDateString() + '</span><br>';
+            htmlString += '<span title="Add date"><span class="material-icons">today</span> ' + date.toLocaleDateString() + '</span><br>';
 
             htmlString += '<span class="text-secondary" title="UbiCast server"><span class="material-icons">public</span> ' + videos[oid].website + '</span><br>';
 
@@ -43,7 +43,7 @@ myPort.onMessage.addListener(function(videos) {
                     htmlString += '<span class="material-icons">headphones</span>  Audio<br>';
                     htmlString += '<a target="_blank" href="' + videos[oid][format].url + '">' + videos[oid][format].filename + '</a><br>';
                 } else {
-                    htmlString += '<span class="material-icons">videocam</span>  Video <span class="text-secondary mono">(' + format + ')</span><br>';
+                    htmlString += '<span class="material-icons">videocam</span>  Video (' + format + ')<br>';
                     htmlString += '<a target="_blank" href="' + videos[oid][format].url + '">' + videos[oid][format].filename + '</a><br>';
                 }
             }

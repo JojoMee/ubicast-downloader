@@ -67,6 +67,10 @@ h3, .center {
     color:var(--secondary-color);
 }
 
+.text-secondary > a {
+    text-decoration: none;
+}
+
 .mono {
     font-family: monospace, monospace;
 }
