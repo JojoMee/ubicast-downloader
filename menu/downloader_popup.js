@@ -13,18 +13,20 @@ myPort.onMessage.addListener(function(videos) {
             var minutes = (Math.floor(videos[oid].duration) - seconds) / 60;
 
             htmlString += '<div class="video-container">';
-            htmlString += '<b>' + videos[oid].title + '</b> (<span class="mono">' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2) + '</span>)<br>';
-            htmlString += '<span class="text-secondary">🌍&nbsp;' + videos[oid].website + '</span> ';
+            htmlString += '<b>' + videos[oid].title + '</b><br>';
+            htmlString += '<span class="text-secondary"><span class="material-icons">schedule</span> <span class="mono">' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2) + '</span> ';
 
-            var date = new Date(videos[oid].date);
-            htmlString += '<span class="text-secondary">📅&nbsp;' + date.toLocaleDateString() + '</span><br>';
-            
             if (videos[oid].speaker) {
-                htmlString += '<span class="text-secondary">✍🏻&nbsp;' + videos[oid].speaker + '</span> ';
+                htmlString += '<span class="text-secondary"><span class="material-icons">record_voice_over</span> ' + videos[oid].speaker + '</span> ';
             }
 
+            var date = new Date(videos[oid].date);
+            htmlString += '<span class="text-secondary"><span class="material-icons">today</span> ' + date.toLocaleDateString() + '</span><br>';
+
+            htmlString += '<span class="material-icons">public</span> ' + videos[oid].website + '</span><br>';
+
             if (videos[oid].license) {
-                htmlString += '<span class="text-secondary">📝&nbsp;' + (videos[oid].license_url ? '<a href="' + videos[oid].license_url + '">' + videos[oid].license + '</a>' : videos[oid].license) + '</span>';
+                htmlString += '<span class="text-secondary"><span class="material-icons">info</span> ' + (videos[oid].license_url ? '<a href="' + videos[oid].license_url + '">' + videos[oid].license + '</a>' : videos[oid].license) + '</span>';
             }
 
             if (videos[oid].speaker || videos[oid].license) {
@@ -38,10 +40,10 @@ myPort.onMessage.addListener(function(videos) {
                 var bitrate = Math.round(videos[oid][format].bitrate / 1000);
 
                 if (format == 'audio') {
-                    htmlString += '🎧 Audio <span class="text-secondary mono">(' + bitrate + ' kb/s)</span><br>';
+                    htmlString += '<span class="material-icons">headphones</span>  Audio<br>';
                     htmlString += '<a target="_blank" href="' + videos[oid][format].url + '">' + videos[oid][format].filename + '</a><br>';
                 } else {
-                    htmlString += '🎥 Video <span class="text-secondary mono">(' + format + ', ' + videos[oid][format].width + 'x' + videos[oid][format].height + ', ' + bitrate + ' kb/s)</span><br>';
+                    htmlString += '<span class="material-icons">videocam</span>  Video <span class="text-secondary mono">(' + format + ')</span><br>';
                     htmlString += '<a target="_blank" href="' + videos[oid][format].url + '">' + videos[oid][format].filename + '</a><br>';
                 }
             }
@@ -49,9 +51,7 @@ myPort.onMessage.addListener(function(videos) {
             htmlString += '</div><br>';
         }
 
-        // document.getElementById('video-urls').innerHTML = htmlString;
-
-        var el = document.getElementById('video-urls'); // .innerHTML = htmlString;
+        var el = document.getElementById('video-urls');
         const parser = new DOMParser();
         const parsed = parser.parseFromString(htmlString, `text/html`);
         const tags = parsed.getElementsByTagName(`body`);

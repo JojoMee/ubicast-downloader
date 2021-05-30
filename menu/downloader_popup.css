@@ -1,6 +1,7 @@
 :root {
-    --background: #fff;
+    --background: #ffffff;
     --text-color: #000000;
+    --secondary-color: #616161;
     --link-color: #337fd2;
 }
 
@@ -8,8 +9,38 @@
     :root{
         --background:#161618;
         --text-color: #f2f5f4;
+        --secondary-color: #888888;
         --link-color: #75c0c7;
     }
+}
+
+/* Material Design icons: https://developers.google.com/fonts/docs/material_icons */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(material-icons/MaterialIcons-Regular.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: large;
+    display: inline-flex;
+    vertical-align: middle;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -17,6 +48,7 @@ body {
     background:var(--background);
     color:var(--text-color);
     font-size: large;
+    min-width: max-content;
 }
 
 a {
@@ -32,7 +64,7 @@ h3, .center {
 }
 
 .text-secondary {
-    color:#888888;
+    color:var(--secondary-color);
 }
 
 .mono {
